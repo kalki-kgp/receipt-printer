@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
+  /* Light scale: step 1 = app background, step 12 = high-contrast foreground. */
   --color-grayscale-1: oklch(99.4% 0.001 106);
   --color-grayscale-2: oklch(98.2% 0.002 106);
   --color-grayscale-3: oklch(95.3% 0.003 106);
@@ -17,4 +20,25 @@
   --color-green-9: oklch(64.5% 0.16 149);
 
   --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+/* Dark scale keeps the same semantics with the ramp inverted, so `dark:` variants
+   in the component read the same way they do in light mode. */
+.dark {
+  --color-grayscale-1: oklch(17.8% 0.004 106);
+  --color-grayscale-2: oklch(21.3% 0.004 106);
+  --color-grayscale-3: oklch(25.5% 0.005 106);
+  --color-grayscale-4: oklch(28.4% 0.005 106);
+  --color-grayscale-5: oklch(31.4% 0.006 106);
+  --color-grayscale-6: oklch(35.1% 0.006 106);
+  --color-grayscale-7: oklch(41.0% 0.007 106);
+  --color-grayscale-8: oklch(51.2% 0.008 106);
+  --color-grayscale-9: oklch(56.5% 0.008 106);
+  --color-grayscale-10: oklch(61.6% 0.008 106);
+  --color-grayscale-11: oklch(76.9% 0.006 106);
+  --color-grayscale-12: oklch(94.9% 0.003 106);
+
+  --color-green-9: oklch(70.4% 0.15 149);
+
+  color-scheme: dark;
 }
