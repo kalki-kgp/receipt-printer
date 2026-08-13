@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-grayscale-1: oklch(99.4% 0.001 106);
+  --color-grayscale-2: oklch(98.2% 0.002 106);
+  --color-grayscale-3: oklch(95.3% 0.003 106);
+  --color-grayscale-4: oklch(92.6% 0.004 106);
+  --color-grayscale-5: oklch(89.9% 0.004 106);
+  --color-grayscale-6: oklch(87.1% 0.005 106);
+  --color-grayscale-7: oklch(83.1% 0.006 106);
+  --color-grayscale-8: oklch(76.9% 0.007 106);
+  --color-grayscale-9: oklch(64.3% 0.008 106);
+  --color-grayscale-10: oklch(60.6% 0.008 106);
+  --color-grayscale-11: oklch(50.3% 0.007 106);
+  --color-grayscale-12: oklch(24.2% 0.005 106);
+
+  --color-green-9: oklch(64.5% 0.16 149);
+
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+}

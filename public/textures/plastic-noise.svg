@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <filter id="plastic-noise">
+    <feTurbulence baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" type="fractalNoise" />
+    <feColorMatrix type="saturate" values="0" />
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.55" />
+    </feComponentTransfer>
+  </filter>
+  <rect width="180" height="180" filter="url(#plastic-noise)" />
+</svg>
